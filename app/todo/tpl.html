@@ -1,0 +1,11 @@
+<div>
+    Fiter <input type="text" ng-model="taskFilter">
+
+</div>
+<ul>
+    <li ng-repeat="task in tasks | filter: taskFilter">
+        <label><input type="checkbox" ng-model="task.done">
+            Title: <span  ng-class="{'text-strike':task.done}">{{task.title}}</span>
+        </label></li>
+</ul>
+<h2>Tasks to do - {{tasksToDo()}}</h2>
