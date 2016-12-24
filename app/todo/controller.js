@@ -17,7 +17,7 @@ function main($scope, $rootScope, tasks){
         })
         console.log($scope.newTaskName);
         }*/
-    };
+    }
 
     $scope.tasks=tasks.get();
    /* $scope.tasks = [
